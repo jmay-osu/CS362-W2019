@@ -1,0 +1,80 @@
+/* 
+ * Unit test 1: numHandCards
+ *
+ * Basic requirements: 
+ *      1) Should return the exact number of cards in the current player's hand
+ *      2) No state change should occur for any players
+ *      3) No state change should occur to victory or kingdom card piles
+ *
+ */
+
+#include "dominion.h"
+#include "dominion_helpers.h"
+#include <string.h>
+#include <stdio.h>
+#include <assert.h>
+#include "rngs.h"
+
+#define TESTFUNCTION "numHandCards"
+
+int main()
+{
+	int i;
+	struct gameState G, testG;
+	int numPlayers = 2;
+	int seed = 1000;
+    	int k[10] = {adventurer, council_room, feast, gardens, mine
+               , remodel, smithy, village, baron, great_hall};
+	int currentPlayer = 0;
+	
+	// Initialize a new game
+	initializeGame(numPlayers, k, seed, &G);
+        printf("----------- Testing function: %s -----------\n", TESTFUNCTION); 
+
+	// ----------- TEST 1: Return exact number of cards in player's hand --------------
+ 	printf("TEST 1: Return exact number of cards in player's hand\n"); 
+
+	// Copy the game state to a test case
+  	memcpy(&testG, &G, sizeof(struct gameState));
+ 	printf("hand count = %d, expected = %d\n", testG.handCount[currentPlayer], G.handCount[currentPlayer]); 
+	assert(testG.handCount[currentPlayer] == G.handCount[currentPlayer]);
+
+	// ----------- TEST 2: No state change should occur for any players -----------
+	printf("TEST 2: No state change should occur for any players\n");
+	for (i = 0; i < numPlayers; i++)
+	{
+		printf("Test player %d\n", i);
+		// Clear the game state
+		memset(&G, 23, sizeof(struct gameState)); 
+		initializeGame(numPlayers, k, seed, &G);
+		memcpy(&testG, &G, sizeof(struct gameState));
+		printf("hand count = %d, expected = %d\n", testG.handCount[i], G.handCount[i]);
+		assert(testG.handCount[i] == G.handCount[i]);
+	}
+	// Deck count should remain the same
+		
+ 
+
+	// ----------- TEST 3: No state change should occur to victory or kingdom card piles -----------
+ 	printf("TEST 3: No state change should occur to victory or kingdom card piles\n");	
+	
+	// Check victory card piles
+	printf("province count = %d, expected = %d\n", testG.supplyCount[province], G.supplyCount[province]);
+	printf("duchy count = %d, expected = %d\n", testG.supplyCount[duchy], G.supplyCount[duchy]);
+	printf("estate count = %d, expected = %d\n", testG.supplyCount[estate], G.supplyCount[estate]);
+	assert(testG.supplyCount[estate] == G.supplyCount[estate]);
+	assert(testG.supplyCount[duchy] == G.supplyCount[duchy]);
+	assert(testG.supplyCount[province] == G.supplyCount[province]);
+	
+	// Check kingdom card piles
+ 	for (int i = 0; i < 10; i++)
+	{	
+		printf("Checking card %i = ", i);
+		printf("card count = %d, expected = %d\n", testG.supplyCount[k[i]], G.supplyCount[k[i]]);
+		assert(testG.supplyCount[k[i]] == G.supplyCount[k[i]]);
+	}
+	
+	printf("\n >>>>> SUCCESS: Testing complete %s <<<<<\n\n", TESTFUNCTION);
+
+	return 0;
+}

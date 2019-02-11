@@ -1,0 +1,496 @@
+unittest1.c:
+----------- Testing function: numHandCards -----------
+TEST 1: Return exact number of cards in player's hand
+hand count = 5, expected = 5
+TEST 2: No state change should occur for any players
+Test player 0
+hand count = 5, expected = 5
+Test player 1
+hand count = 0, expected = 0
+TEST 3: No state change should occur to victory or kingdom card piles
+province count = 8, expected = 8
+duchy count = 8, expected = 8
+estate count = 8, expected = 8
+Checking card 0 = card count = 10, expected = 10
+Checking card 1 = card count = 10, expected = 10
+Checking card 2 = card count = 10, expected = 10
+Checking card 3 = card count = 8, expected = 8
+Checking card 4 = card count = 10, expected = 10
+Checking card 5 = card count = 10, expected = 10
+Checking card 6 = card count = 10, expected = 10
+Checking card 7 = card count = 10, expected = 10
+Checking card 8 = card count = 10, expected = 10
+Checking card 9 = card count = 8, expected = 8
+
+ >>>>> SUCCESS: Testing complete numHandCards <<<<<
+
+File 'dominion.c'
+Lines executed:15.95% of 558
+Branches executed:15.83% of 417
+Taken at least once:12.95% of 417
+Calls executed:7.37% of 95
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+----------- Testing function: handCard -----------
+TEST 1: Determine current player
+current player = 0, expected = 0
+TEST 2: No state change should occur for any players
+Test player 0
+hand count = 5, expected = 5
+Test player 1
+hand count = 0, expected = 0
+TEST 3: No state change should occur to victory and kingdom card piles
+province count = 8, expected = 8
+duchy count = 8, expected = 8
+estate count = 8, expected = 8
+Checking card 0 = card count = 10, expected = 10
+Checking card 1 = card count = 10, expected = 10
+Checking card 2 = card count = 10, expected = 10
+Checking card 3 = card count = 8, expected = 8
+Checking card 4 = card count = 10, expected = 10
+Checking card 5 = card count = 10, expected = 10
+Checking card 6 = card count = 10, expected = 10
+Checking card 7 = card count = 10, expected = 10
+Checking card 8 = card count = 10, expected = 10
+Checking card 9 = card count = 8, expected = 8
+
+ >>>>> SUCCESS: Testing complete handCard <<<<<
+
+File 'dominion.c'
+Lines executed:15.95% of 558
+Branches executed:15.83% of 417
+Taken at least once:12.95% of 417
+Calls executed:7.37% of 95
+Creating 'dominion.c.gcov'
+
+unittest3.c:
+----------- Testing function: updateCoins -----------
+TEST 1: Adds one coin for each copper
+Coin count = 0, expected = 0
+Coin count = 0, expected = 0
+Coin count = 1, expected = 1
+Coin count = 1, expected = 1
+Coin count = 2, expected = 2
+Coin count = 2, expected = 2
+Coin count = 3, expected = 3
+Coin count = 3, expected = 3
+Coin count = 4, expected = 4
+Coin count = 4, expected = 4
+Coin count = 5, expected = 5
+Coin count = 5, expected = 5
+Coin count = 6, expected = 6
+Coin count = 6, expected = 6
+Coin count = 7, expected = 7
+Coin count = 7, expected = 7
+Coin count = 8, expected = 8
+Coin count = 8, expected = 8
+Coin count = 9, expected = 9
+Coin count = 9, expected = 9
+Coin count = 1, expected = 1
+Coin count = 2, expected = 2
+Coin count = 2, expected = 2
+Coin count = 3, expected = 3
+Coin count = 3, expected = 3
+Coin count = 4, expected = 4
+Coin count = 4, expected = 4
+Coin count = 5, expected = 5
+Coin count = 5, expected = 5
+Coin count = 6, expected = 6
+Coin count = 6, expected = 6
+Coin count = 7, expected = 7
+Coin count = 7, expected = 7
+Coin count = 8, expected = 8
+Coin count = 8, expected = 8
+Coin count = 9, expected = 9
+Coin count = 9, expected = 9
+Coin count = 10, expected = 10
+Coin count = 10, expected = 10
+Coin count = 11, expected = 11
+Coin count = 2, expected = 2
+Coin count = 4, expected = 4
+Coin count = 3, expected = 3
+Coin count = 5, expected = 5
+Coin count = 4, expected = 4
+Coin count = 6, expected = 6
+Coin count = 5, expected = 5
+Coin count = 7, expected = 7
+Coin count = 6, expected = 6
+Coin count = 8, expected = 8
+Coin count = 7, expected = 7
+Coin count = 9, expected = 9
+Coin count = 8, expected = 8
+Coin count = 10, expected = 10
+Coin count = 9, expected = 9
+Coin count = 11, expected = 11
+Coin count = 10, expected = 10
+Coin count = 12, expected = 12
+Coin count = 11, expected = 11
+Coin count = 13, expected = 13
+Coin count = 3, expected = 3
+Coin count = 6, expected = 6
+Coin count = 4, expected = 4
+Coin count = 7, expected = 7
+Coin count = 5, expected = 5
+Coin count = 8, expected = 8
+Coin count = 6, expected = 6
+Coin count = 9, expected = 9
+Coin count = 7, expected = 7
+Coin count = 10, expected = 10
+Coin count = 8, expected = 8
+Coin count = 11, expected = 11
+Coin count = 9, expected = 9
+Coin count = 12, expected = 12
+Coin count = 10, expected = 10
+Coin count = 13, expected = 13
+Coin count = 11, expected = 11
+Coin count = 14, expected = 14
+Coin count = 12, expected = 12
+Coin count = 15, expected = 15
+Coin count = 4, expected = 4
+Coin count = 8, expected = 8
+Coin count = 5, expected = 5
+Coin count = 9, expected = 9
+Coin count = 6, expected = 6
+Coin count = 10, expected = 10
+Coin count = 7, expected = 7
+Coin count = 11, expected = 11
+Coin count = 8, expected = 8
+Coin count = 12, expected = 12
+Coin count = 9, expected = 9
+Coin count = 13, expected = 13
+Coin count = 10, expected = 10
+Coin count = 14, expected = 14
+Coin count = 11, expected = 11
+Coin count = 15, expected = 15
+Coin count = 12, expected = 12
+Coin count = 16, expected = 16
+Coin count = 13, expected = 13
+Coin count = 17, expected = 17
+TEST 2: Adds two coins for each silver
+Coin count = 0, expected = 0
+Coin count = 1, expected = 1
+Coin count = 2, expected = 2
+Coin count = 3, expected = 3
+Coin count = 4, expected = 4
+Coin count = 5, expected = 5
+Coin count = 6, expected = 6
+Coin count = 7, expected = 7
+Coin count = 8, expected = 8
+Coin count = 9, expected = 9
+Coin count = 2, expected = 2
+Coin count = 3, expected = 3
+Coin count = 4, expected = 4
+Coin count = 5, expected = 5
+Coin count = 6, expected = 6
+Coin count = 7, expected = 7
+Coin count = 8, expected = 8
+Coin count = 9, expected = 9
+Coin count = 10, expected = 10
+Coin count = 11, expected = 11
+Coin count = 4, expected = 4
+Coin count = 5, expected = 5
+Coin count = 6, expected = 6
+Coin count = 7, expected = 7
+Coin count = 8, expected = 8
+Coin count = 9, expected = 9
+Coin count = 10, expected = 10
+Coin count = 11, expected = 11
+Coin count = 12, expected = 12
+Coin count = 13, expected = 13
+Coin count = 6, expected = 6
+Coin count = 7, expected = 7
+Coin count = 8, expected = 8
+Coin count = 9, expected = 9
+Coin count = 10, expected = 10
+Coin count = 11, expected = 11
+Coin count = 12, expected = 12
+Coin count = 13, expected = 13
+Coin count = 14, expected = 14
+Coin count = 15, expected = 15
+Coin count = 8, expected = 8
+Coin count = 9, expected = 9
+Coin count = 10, expected = 10
+Coin count = 11, expected = 11
+Coin count = 12, expected = 12
+Coin count = 13, expected = 13
+Coin count = 14, expected = 14
+Coin count = 15, expected = 15
+Coin count = 16, expected = 16
+Coin count = 17, expected = 17
+TEST 3: Adds three coins for each gold
+Coin count = 0, expected = 0
+Coin count = 1, expected = 1
+Coin count = 2, expected = 2
+Coin count = 3, expected = 3
+Coin count = 4, expected = 4
+Coin count = 5, expected = 5
+Coin count = 6, expected = 6
+Coin count = 7, expected = 7
+Coin count = 8, expected = 8
+Coin count = 9, expected = 9
+Coin count = 3, expected = 3
+Coin count = 4, expected = 4
+Coin count = 5, expected = 5
+Coin count = 6, expected = 6
+Coin count = 7, expected = 7
+Coin count = 8, expected = 8
+Coin count = 9, expected = 9
+Coin count = 10, expected = 10
+Coin count = 11, expected = 11
+Coin count = 12, expected = 12
+Coin count = 6, expected = 6
+Coin count = 7, expected = 7
+Coin count = 8, expected = 8
+Coin count = 9, expected = 9
+Coin count = 10, expected = 10
+Coin count = 11, expected = 11
+Coin count = 12, expected = 12
+Coin count = 13, expected = 13
+Coin count = 14, expected = 14
+Coin count = 15, expected = 15
+Coin count = 9, expected = 9
+Coin count = 10, expected = 10
+Coin count = 11, expected = 11
+Coin count = 12, expected = 12
+Coin count = 13, expected = 13
+Coin count = 14, expected = 14
+Coin count = 15, expected = 15
+Coin count = 16, expected = 16
+Coin count = 17, expected = 17
+Coin count = 18, expected = 18
+Coin count = 12, expected = 12
+Coin count = 13, expected = 13
+Coin count = 14, expected = 14
+Coin count = 15, expected = 15
+Coin count = 16, expected = 16
+Coin count = 17, expected = 17
+Coin count = 18, expected = 18
+Coin count = 19, expected = 19
+Coin count = 20, expected = 20
+Coin count = 21, expected = 21
+TEST 4: No state change should occur for any players
+Test player 0
+hand count = 5, expected = 5
+Test player 1
+hand count = 0, expected = 0
+TEST 5: No state change should occur to victory and kingdom card piles
+province count = 8, expected = 8
+duchy count = 8, expected = 8
+estate count = 8, expected = 8
+Checking card 0 = card count = 10, expected = 10
+Checking card 1 = card count = 10, expected = 10
+Checking card 2 = card count = 10, expected = 10
+Checking card 3 = card count = 8, expected = 8
+Checking card 4 = card count = 10, expected = 10
+Checking card 5 = card count = 10, expected = 10
+Checking card 6 = card count = 10, expected = 10
+Checking card 7 = card count = 10, expected = 10
+Checking card 8 = card count = 10, expected = 10
+Checking card 9 = card count = 8, expected = 8
+
+ >>>>> SUCCESS: Testing complete updateCoins <<<<<
+
+File 'dominion.c'
+Lines executed:16.31% of 558
+Branches executed:15.83% of 417
+Taken at least once:13.43% of 417
+Calls executed:7.37% of 95
+Creating 'dominion.c.gcov'
+
+unittest4.c:
+----------- Testing function: isGameOver -----------
+TEST 1: Game state changes if stack of province cards is empty
+province count = 0
+province count = 1
+province count = 2
+province count = 3
+province count = 4
+province count = 5
+province count = 6
+province count = 7
+province count = 8
+TEST 2: No state change should occur for any players
+Test player 0
+hand count = 5, expected = 5
+Test player 1
+hand count = 0, expected = 0
+TEST 3: No state change should occur to victory and kingdom card piles
+province count = 8, expected = 8
+duchy count = 8, expected = 8
+estate count = 8, expected = 8
+Checking card 0 = card count = 10, expected = 10
+Checking card 1 = card count = 10, expected = 10
+Checking card 2 = card count = 10, expected = 10
+Checking card 3 = card count = 8, expected = 8
+Checking card 4 = card count = 10, expected = 10
+Checking card 5 = card count = 10, expected = 10
+Checking card 6 = card count = 10, expected = 10
+Checking card 7 = card count = 10, expected = 10
+Checking card 8 = card count = 10, expected = 10
+Checking card 9 = card count = 8, expected = 8
+
+ >>>>> SUCCESS: Testing complete isGameOver <<<<<
+
+File 'dominion.c'
+Lines executed:15.95% of 558
+Branches executed:15.83% of 417
+Taken at least once:12.95% of 417
+Calls executed:7.37% of 95
+Creating 'dominion.c.gcov'
+
+cardtest1.c:
+----------- Testing function: Smithy -----------
+TEST 1: Current player receives 3 cards
+hand count = 4, expected = 5
+TEST 1: Current player receives 3 cards FAILED
+TEST 2: Cards should come from his or her own pile
+deck count = 2, expected = 2
+TEST 3: No state change should occur for any players
+Test player 0
+hand count = 5, expected = 5
+Test player 1
+hand count = 0, expected = 0
+TEST 4: No state change should occur to victory and kingdom card piles
+province count = 8, expected = 8
+duchy count = 8, expected = 8
+estate count = 8, expected = 8
+Checking card 0 = card count = 10, expected = 10
+Checking card 1 = card count = 10, expected = 10
+Checking card 2 = card count = 10, expected = 10
+Checking card 3 = card count = 8, expected = 8
+Checking card 4 = card count = 10, expected = 10
+Checking card 5 = card count = 10, expected = 10
+Checking card 6 = card count = 10, expected = 10
+Checking card 7 = card count = 10, expected = 10
+Checking card 8 = card count = 10, expected = 10
+Checking card 9 = card count = 8, expected = 8
+
+ >>>>> SUCCESS: Testing complete Smithy <<<<<
+
+File 'dominion.c'
+Lines executed:20.61% of 558
+Branches executed:23.26% of 417
+Taken at least once:14.63% of 417
+Calls executed:11.58% of 95
+Creating 'dominion.c.gcov'
+
+cardtest2.c:
+----------- Testing function: Adventurer -----------
+TEST 1: Exactly two treasure cards drawn
+treasure count = 4, expected = 2
+TEST 1: Exactly two treasure cards drawn FAILED
+TEST 2: All drawn cards are discarded
+discard count = 0, expected = 0
+TEST 3: No state change should occur for any players
+Test player 0
+hand count = 5, expected = 5
+Test player 1
+hand count = 0, expected = 0
+TEST 4: No state change should occur to victory and kingdom card piles
+province count = 8, expected = 8
+duchy count = 8, expected = 8
+estate count = 8, expected = 8
+Checking card 0 = card count = 10, expected = 10
+Checking card 1 = card count = 10, expected = 10
+Checking card 2 = card count = 10, expected = 10
+Checking card 3 = card count = 8, expected = 8
+Checking card 4 = card count = 10, expected = 10
+Checking card 5 = card count = 10, expected = 10
+Checking card 6 = card count = 10, expected = 10
+Checking card 7 = card count = 10, expected = 10
+Checking card 8 = card count = 10, expected = 10
+Checking card 9 = card count = 8, expected = 8
+
+ >>>>> SUCCESS: Testing complete Adventurer <<<<<
+
+File 'dominion.c'
+Lines executed:19.53% of 558
+Branches executed:23.26% of 417
+Taken at least once:14.63% of 417
+Calls executed:10.53% of 95
+Creating 'dominion.c.gcov'
+
+cardtest3.c:
+----------- Testing function: Village -----------
+TEST 1: Current player receives 1 card
+hand count = 5, expected = 5
+TEST 2: Current player receives 2 actions
+action count = 1, expected = 3
+TEST 3: No state change should occur for any players
+Test player 0
+hand count = 5, expected = 5
+Test player 1
+hand count = 0, expected = 0
+TEST 4: No state change should occur to victory and kingdom card piles
+province count = 8, expected = 8
+duchy count = 8, expected = 8
+estate count = 8, expected = 8
+Checking card 0 = card count = 10, expected = 10
+Checking card 1 = card count = 10, expected = 10
+Checking card 2 = card count = 10, expected = 10
+Checking card 3 = card count = 8, expected = 8
+Checking card 4 = card count = 10, expected = 10
+Checking card 5 = card count = 10, expected = 10
+Checking card 6 = card count = 10, expected = 10
+Checking card 7 = card count = 10, expected = 10
+Checking card 8 = card count = 10, expected = 10
+Checking card 9 = card count = 8, expected = 8
+
+ >>>>> SUCCESS: Testing complete Village <<<<<
+
+File 'dominion.c'
+Lines executed:20.61% of 558
+Branches executed:22.78% of 417
+Taken at least once:14.15% of 417
+Calls executed:11.58% of 95
+Creating 'dominion.c.gcov'
+
+cardtest4.c:
+----------------- Testing Card: Steward ----------------
+TEST 1: choice1 = 1 = +2 cards
+hand count = 6, expected = 6
+deck count = 3, expected = 3
+coins = 4, expected = 4
+TEST 2: choice1 = 2 = +2 coins
+hand count = 4, expected = 4
+deck count = 5, expected = 5
+coins = 6, expected = 6
+TEST 3: choice1 = 3 = trash two cards
+starting cards: (18)(4)(2)(1)(9); removed: (4)(2); ending cards: (9)(1), expected: (1)(9)
+hand count = 2, expected = 2
+deck count = 5, expected = 5
+starting cards: (18)(4)(2)(1)(9); removed: (4)(1); ending cards: (2)(9), expected: (2)(9)
+starting cards: (18)(4)(2)(1)(9); removed: (4)(9); ending cards: (2)(1), expected: (2)(1)
+starting cards: (18)(4)(2)(1)(9); removed: (2)(1); ending cards: (9)(4), expected: (4)(9)
+starting cards: (18)(4)(2)(1)(9); removed: (2)(9); ending cards: (1)(4), expected: (4)(1)
+starting cards: (18)(4)(2)(1)(9); removed: (1)(9); ending cards: (2)(4), expected: (4)(2)
+TEST 4: No state change should occur for any players
+Test player 0
+hand count = 5, expected = 5
+Test player 1
+hand count = 0, expected = 0
+TEST 5: No state change should occur to victory and kingdom card piles
+province count = 8, expected = 8
+duchy count = 8, expected = 8
+estate count = 8, expected = 8
+Checking card 0 = card count = 10, expected = 10
+Checking card 1 = card count = 10, expected = 10
+Checking card 2 = card count = 10, expected = 10
+Checking card 3 = card count = 10, expected = 10
+Checking card 4 = card count = 10, expected = 10
+Checking card 5 = card count = 10, expected = 10
+Checking card 6 = card count = 10, expected = 10
+Checking card 7 = card count = 10, expected = 10
+Checking card 8 = card count = 10, expected = 10
+Checking card 9 = card count = 10, expected = 10
+
+ >>>>> SUCCESS: Testing complete Steward <<<<<
+
+File 'dominion.c'
+Lines executed:21.33% of 558
+Branches executed:23.26% of 417
+Taken at least once:14.87% of 417
+Calls executed:14.74% of 95
+Creating 'dominion.c.gcov'
+
